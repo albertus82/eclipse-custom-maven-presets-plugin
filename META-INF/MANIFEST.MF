@@ -5,5 +5,5 @@ Bundle-SymbolicName: io.github.albertus82.eclipse.custom.maven.actions;singleton
 Bundle-Version: 0.1.0
 Bundle-Vendor: io.github.albertus82
 Automatic-Module-Name: custom.maven.actions
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.eclipse.m2e.core.ui;bundle-version="[1.0.0,2.0.0)",org.eclipse.m2e.launching;bundle-version="[1.5.0,2.0.0)"
