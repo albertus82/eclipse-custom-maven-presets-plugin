@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension point="org.eclipse.debug.ui.launchShortcuts">
+		<shortcut id="io.github.albertus82.eclipse.custom.maven.actions.LifeCycleCleanInstall"
+                  class="org.eclipse.m2e.actions.ExecutePomAction:clean install -V -e -ntp"
+                  icon="m2.gif"
+                  label="Maven clean install"
+                  modes="run,debug">
+			<contextualLaunch>
+				<contextLabel label="Maven clean install" mode="run"/>
+				<contextLabel label="Maven clean install" mode="debug"/>
+				<enablement>
+					<count value="1"/>
+					<iterate>
+						<or>
+							<adapt type="org.eclipse.core.resources.IFile">
+								<test property="org.eclipse.core.resources.name" value="pom.xml"/>
+							</adapt>
+							<adapt type="org.eclipse.core.resources.IProject">
+								<test property="org.eclipse.core.resources.projectNature" value="org.eclipse.m2e.core.maven2Nature"/>
+							</adapt>
+						</or>
+					</iterate>
+				</enablement>
+			</contextualLaunch>
+		</shortcut>
+	</extension>
+</plugin>
