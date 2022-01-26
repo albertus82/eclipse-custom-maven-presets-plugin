@@ -4,7 +4,7 @@
 	<extension point="org.eclipse.debug.ui.launchShortcuts">
 		<shortcut id="io.github.albertus82.eclipse.custom.maven.actions.LifeCycleCleanInstall"
                   class="org.eclipse.m2e.actions.ExecutePomAction:clean install -V -e -ntp"
-                  icon="m2.gif"
+                  icon="m2b.gif"
                   label="Maven clean install"
                   modes="run,debug">
 			<contextualLaunch>
@@ -27,7 +27,7 @@
 		</shortcut>
 		<shortcut id="io.github.albertus82.eclipse.custom.maven.actions.LifeCycleCleanPackage"
                   class="org.eclipse.m2e.actions.ExecutePomAction:clean package -V -e -ntp"
-                  icon="m2.gif"
+                  icon="m2b.gif"
                   label="Maven clean package"
                   modes="run,debug">
 			<contextualLaunch>
