@@ -1,6 +1,8 @@
 Eclipse Custom Maven Presets Plugin
 ===================================
 
+[![Build](https://github.com/albertus82/eclipse-custom-maven-presets-plugin/actions/workflows/build.yml/badge.svg)](https://github.com/albertus82/eclipse-custom-maven-presets-plugin/actions/workflows/build.yml)
+
 ***Add Maven presets in Eclipse "Run As..." context menu***
 
 ## Usage
