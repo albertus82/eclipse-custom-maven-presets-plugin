@@ -29,7 +29,7 @@
 			<resource>
 				<directory>${project.basedir}</directory>
 				<includes>
-					<include>plugin.xml</include>
+					<include>plugin.*</include>
 				</includes>
 			</resource>
 		</resources>
@@ -53,6 +53,24 @@
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 						</manifest>
 					</archive>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>pl.project13.maven</groupId>
+				<artifactId>git-commit-id-plugin</artifactId>
+				<version>4.0.5</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>revision</goal>
+						</goals>
+						<phase>initialize</phase>
+					</execution>
+				</executions>
+				<configuration>
+					<dateFormat>yyyy-MM-dd'T'HH:mm:ssXXX</dateFormat>
+					<dateFormatTimeZone>Z</dateFormatTimeZone>
 				</configuration>
 			</plugin>
 		</plugins>
