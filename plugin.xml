@@ -2,16 +2,16 @@
 <?eclipse version="3.4"?>
 <plugin>
 	<extension point="org.eclipse.debug.ui.launchShortcuts">
-		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycleCleanPackage"
-                  class="org.eclipse.m2e.actions.ExecutePomAction:clean package -V -e -ntp"
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycle1"
+                  class="%1.class"
                   icon="m2b.gif"
-                  label="Maven clean package"
+                  label="%1.label"
                   modes="run,debug">
 			<contextualLaunch>
-				<contextLabel label="Maven clean package" mode="run"/>
-				<contextLabel label="Maven clean package" mode="debug"/>
+				<contextLabel label="%1.label" mode="run"/>
+				<contextLabel label="%1.label" mode="debug"/>
 				<enablement>
-					<count value="1"/>
+					<count value="%1.enabled"/>
 					<iterate>
 						<or>
 							<adapt type="org.eclipse.core.resources.IFile">
@@ -25,16 +25,16 @@
 				</enablement>
 			</contextualLaunch>
 		</shortcut>
-		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycleCleanInstall"
-                  class="org.eclipse.m2e.actions.ExecutePomAction:clean install -V -e -ntp"
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycle2"
+                  class="%2.class"
                   icon="m2b.gif"
-                  label="Maven clean install"
+                  label="%2.label"
                   modes="run,debug">
 			<contextualLaunch>
-				<contextLabel label="Maven clean install" mode="run"/>
-				<contextLabel label="Maven clean install" mode="debug"/>
+				<contextLabel label="%2.label" mode="run"/>
+				<contextLabel label="%2.label" mode="debug"/>
 				<enablement>
-					<count value="1"/>
+					<count value="%2.enabled"/>
 					<iterate>
 						<or>
 							<adapt type="org.eclipse.core.resources.IFile">
@@ -48,16 +48,154 @@
 				</enablement>
 			</contextualLaunch>
 		</shortcut>
-		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycleCleanGenerateSources"
-                  class="org.eclipse.m2e.actions.ExecutePomAction:clean generate-sources -V -e -ntp"
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycle3"
+                  class="%3.class"
                   icon="m2b.gif"
-                  label="Maven clean generate-sources"
+                  label="%3.label"
                   modes="run,debug">
 			<contextualLaunch>
-				<contextLabel label="Maven clean generate-sources" mode="run"/>
-				<contextLabel label="Maven clean generate-sources" mode="debug"/>
+				<contextLabel label="%3.label" mode="run"/>
+				<contextLabel label="%3.label" mode="debug"/>
 				<enablement>
-					<count value="1"/>
+					<count value="%3.enabled"/>
+					<iterate>
+						<or>
+							<adapt type="org.eclipse.core.resources.IFile">
+								<test property="org.eclipse.core.resources.name" value="pom.xml"/>
+							</adapt>
+							<adapt type="org.eclipse.core.resources.IProject">
+								<test property="org.eclipse.core.resources.projectNature" value="org.eclipse.m2e.core.maven2Nature"/>
+							</adapt>
+						</or>
+					</iterate>
+				</enablement>
+			</contextualLaunch>
+		</shortcut>
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycle4"
+                  class="%4.class"
+                  icon="m2b.gif"
+                  label="%4.label"
+                  modes="run,debug">
+			<contextualLaunch>
+				<contextLabel label="%4.label" mode="run"/>
+				<contextLabel label="%4.label" mode="debug"/>
+				<enablement>
+					<count value="%4.enabled"/>
+					<iterate>
+						<or>
+							<adapt type="org.eclipse.core.resources.IFile">
+								<test property="org.eclipse.core.resources.name" value="pom.xml"/>
+							</adapt>
+							<adapt type="org.eclipse.core.resources.IProject">
+								<test property="org.eclipse.core.resources.projectNature" value="org.eclipse.m2e.core.maven2Nature"/>
+							</adapt>
+						</or>
+					</iterate>
+				</enablement>
+			</contextualLaunch>
+		</shortcut>
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycle5"
+                  class="%5.class"
+                  icon="m2b.gif"
+                  label="%5.label"
+                  modes="run,debug">
+			<contextualLaunch>
+				<contextLabel label="%5.label" mode="run"/>
+				<contextLabel label="%5.label" mode="debug"/>
+				<enablement>
+					<count value="%5.enabled"/>
+					<iterate>
+						<or>
+							<adapt type="org.eclipse.core.resources.IFile">
+								<test property="org.eclipse.core.resources.name" value="pom.xml"/>
+							</adapt>
+							<adapt type="org.eclipse.core.resources.IProject">
+								<test property="org.eclipse.core.resources.projectNature" value="org.eclipse.m2e.core.maven2Nature"/>
+							</adapt>
+						</or>
+					</iterate>
+				</enablement>
+			</contextualLaunch>
+		</shortcut>
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycle6"
+                  class="%6.class"
+                  icon="m2b.gif"
+                  label="%6.label"
+                  modes="run,debug">
+			<contextualLaunch>
+				<contextLabel label="%6.label" mode="run"/>
+				<contextLabel label="%6.label" mode="debug"/>
+				<enablement>
+					<count value="%6.enabled"/>
+					<iterate>
+						<or>
+							<adapt type="org.eclipse.core.resources.IFile">
+								<test property="org.eclipse.core.resources.name" value="pom.xml"/>
+							</adapt>
+							<adapt type="org.eclipse.core.resources.IProject">
+								<test property="org.eclipse.core.resources.projectNature" value="org.eclipse.m2e.core.maven2Nature"/>
+							</adapt>
+						</or>
+					</iterate>
+				</enablement>
+			</contextualLaunch>
+		</shortcut>
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycle7"
+                  class="%7.class"
+                  icon="m2b.gif"
+                  label="%7.label"
+                  modes="run,debug">
+			<contextualLaunch>
+				<contextLabel label="%7.label" mode="run"/>
+				<contextLabel label="%7.label" mode="debug"/>
+				<enablement>
+					<count value="%7.enabled"/>
+					<iterate>
+						<or>
+							<adapt type="org.eclipse.core.resources.IFile">
+								<test property="org.eclipse.core.resources.name" value="pom.xml"/>
+							</adapt>
+							<adapt type="org.eclipse.core.resources.IProject">
+								<test property="org.eclipse.core.resources.projectNature" value="org.eclipse.m2e.core.maven2Nature"/>
+							</adapt>
+						</or>
+					</iterate>
+				</enablement>
+			</contextualLaunch>
+		</shortcut>
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycle8"
+                  class="%8.class"
+                  icon="m2b.gif"
+                  label="%8.label"
+                  modes="run,debug">
+			<contextualLaunch>
+				<contextLabel label="%8.label" mode="run"/>
+				<contextLabel label="%8.label" mode="debug"/>
+				<enablement>
+					<count value="%8.enabled"/>
+					<iterate>
+						<or>
+							<adapt type="org.eclipse.core.resources.IFile">
+								<test property="org.eclipse.core.resources.name" value="pom.xml"/>
+							</adapt>
+							<adapt type="org.eclipse.core.resources.IProject">
+								<test property="org.eclipse.core.resources.projectNature" value="org.eclipse.m2e.core.maven2Nature"/>
+							</adapt>
+						</or>
+					</iterate>
+				</enablement>
+			</contextualLaunch>
+		</shortcut>
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycle9"
+                  class="%9.class"
+                  icon="m2b.gif"
+                  label="%9.label"
+                  modes="run,debug">
+			<contextualLaunch>
+				<contextLabel label="%9.label" mode="run"/>
+				<contextLabel label="%9.label" mode="debug"/>
+				<enablement>
+					<count value="%9.enabled"/>
 					<iterate>
 						<or>
 							<adapt type="org.eclipse.core.resources.IFile">
