@@ -2,7 +2,30 @@
 <?eclipse version="3.4"?>
 <plugin>
 	<extension point="org.eclipse.debug.ui.launchShortcuts">
-		<shortcut id="io.github.albertus82.eclipse.custom.maven.actions.LifeCycleCleanInstall"
+		<shortcut id="io.github.albertus82.eclipse.custom.maven.presets.LifeCycleCleanPackage"
+                  class="org.eclipse.m2e.actions.ExecutePomAction:clean package -V -e -ntp"
+                  icon="m2b.gif"
+                  label="Maven clean package"
+                  modes="run,debug">
+			<contextualLaunch>
+				<contextLabel label="Maven clean package" mode="run"/>
+				<contextLabel label="Maven clean package" mode="debug"/>
+				<enablement>
+					<count value="1"/>
+					<iterate>
+						<or>
+							<adapt type="org.eclipse.core.resources.IFile">
+								<test property="org.eclipse.core.resources.name" value="pom.xml"/>
+							</adapt>
+							<adapt type="org.eclipse.core.resources.IProject">
+								<test property="org.eclipse.core.resources.projectNature" value="org.eclipse.m2e.core.maven2Nature"/>
+							</adapt>
+						</or>
+					</iterate>
+				</enablement>
+			</contextualLaunch>
+		</shortcut>
+		<shortcut id="io.github.albertus82.eclipse.custom.maven.presets.LifeCycleCleanInstall"
                   class="org.eclipse.m2e.actions.ExecutePomAction:clean install -V -e -ntp"
                   icon="m2b.gif"
                   label="Maven clean install"
@@ -25,14 +48,14 @@
 				</enablement>
 			</contextualLaunch>
 		</shortcut>
-		<shortcut id="io.github.albertus82.eclipse.custom.maven.actions.LifeCycleCleanPackage"
-                  class="org.eclipse.m2e.actions.ExecutePomAction:clean package -V -e -ntp"
+		<shortcut id="io.github.albertus82.eclipse.custom.maven.presets.LifeCycleCleanGenerateSources"
+                  class="org.eclipse.m2e.actions.ExecutePomAction:clean generate-sources -V -e -ntp"
                   icon="m2b.gif"
-                  label="Maven clean package"
+                  label="Maven clean generate-sources"
                   modes="run,debug">
 			<contextualLaunch>
-				<contextLabel label="Maven clean package" mode="run"/>
-				<contextLabel label="Maven clean package" mode="debug"/>
+				<contextLabel label="Maven clean generate-sources" mode="run"/>
+				<contextLabel label="Maven clean generate-sources" mode="debug"/>
 				<enablement>
 					<count value="1"/>
 					<iterate>
