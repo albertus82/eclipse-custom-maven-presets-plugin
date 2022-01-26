@@ -8,6 +8,22 @@
 	<groupId>io.github.albertus82</groupId>
 	<artifactId>custom.maven.presets</artifactId>
 	<version>0.1.0</version>
+	<name>Custom Maven Presets</name>
+	<url>https://github.com/albertus82/eclipse-custom-maven-presets-plugin</url>
+	<description>Add Maven presets in Eclipse "Run As..." context menu.</description>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>https://opensource.org/licenses/MIT</url>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:https://github.com/albertus82/eclipse-custom-maven-presets-plugin.git</connection>
+		<developerConnection>scm:git:https://github.com/albertus82/eclipse-custom-maven-presets-plugin.git</developerConnection>
+		<url>https://github.com/albertus82/eclipse-custom-maven-presets-plugin</url>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,6 +47,7 @@
 				<includes>
 					<include>plugin.*</include>
 				</includes>
+				<filtering>true</filtering>
 			</resource>
 		</resources>
 
