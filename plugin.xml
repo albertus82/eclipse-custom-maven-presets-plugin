@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
 	<extension point="org.eclipse.debug.ui.launchShortcuts">
-		<shortcut id="io.github.albertus82.eclipse.custom.maven.presets.LifeCycleCleanPackage"
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycleCleanPackage"
                   class="org.eclipse.m2e.actions.ExecutePomAction:clean package -V -e -ntp"
                   icon="m2b.gif"
                   label="Maven clean package"
@@ -25,7 +25,7 @@
 				</enablement>
 			</contextualLaunch>
 		</shortcut>
-		<shortcut id="io.github.albertus82.eclipse.custom.maven.presets.LifeCycleCleanInstall"
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycleCleanInstall"
                   class="org.eclipse.m2e.actions.ExecutePomAction:clean install -V -e -ntp"
                   icon="m2b.gif"
                   label="Maven clean install"
@@ -48,7 +48,7 @@
 				</enablement>
 			</contextualLaunch>
 		</shortcut>
-		<shortcut id="io.github.albertus82.eclipse.custom.maven.presets.LifeCycleCleanGenerateSources"
+		<shortcut id="io.github.albertus82.custom.maven.presets.LifeCycleCleanGenerateSources"
                   class="org.eclipse.m2e.actions.ExecutePomAction:clean generate-sources -V -e -ntp"
                   icon="m2b.gif"
                   label="Maven clean generate-sources"
