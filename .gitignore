@@ -1,2 +1,8 @@
-/bin/
+*.versionsBackup
+.DS_Store
+.factorypath
 .settings/
+/bin/
+/build/
+/target/
+hs_err_pid*.log
