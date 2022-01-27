@@ -1,6 +1,8 @@
 *.versionsBackup
 .DS_Store
+.classpath
 .factorypath
+.project
 .settings/
 /bin/
 /build/
