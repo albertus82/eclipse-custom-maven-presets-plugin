@@ -8,7 +8,7 @@
 	<groupId>io.github.albertus82</groupId>
 	<artifactId>custom.maven.presets</artifactId>
 	<version>0.1.0</version>
-	<name>Custom Maven Presets</name>
+	<name>Eclipse Custom Maven Presets Plugin</name>
 	<url>https://github.com/albertus82/eclipse-custom-maven-presets-plugin</url>
 	<description>Add Maven presets in Eclipse "Run As" menu.</description>
 
