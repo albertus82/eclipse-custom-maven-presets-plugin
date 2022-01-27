@@ -15,8 +15,8 @@ Eclipse Custom Maven Presets Plugin
    1.label=Maven clean package
    ```
 4. Launch `./mvnw clean verify`
-5. Copy `target/*.jar` into the `plugins` directory of **Eclipse**;
-6. Start **Eclipse** with `-clean` option;
+5. Close **Eclipse** and copy `target/*.jar` to the **Eclipse** `plugins` directory;
+6. Restart **Eclipse** with `-clean` option;
 7. Select a Maven project or a `pom.xml` file and check the **"Run As"** menu.
 
 ### Before:
