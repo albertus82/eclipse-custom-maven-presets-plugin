@@ -30,6 +30,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
+		<maven.version.rules>${project.baseUri}/maven-version-rules.xml</maven.version.rules>
 	</properties>
 
 	<build>
