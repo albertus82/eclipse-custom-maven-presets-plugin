@@ -1,7 +1,7 @@
 Eclipse Custom Maven Presets Plugin
 ===================================
 
-[![Build](https://github.com/albertus82/eclipse-custom-maven-presets-plugin/actions/workflows/build.yml/badge.svg)](https://github.com/albertus82/eclipse-custom-maven-presets-plugin/actions/workflows/build.yml)
+[![Build](https://github.com/albertus82/eclipse-custom-maven-presets-plugin/actions/workflows/build.yml/badge.svg)](https://github.com/albertus82/eclipse-custom-maven-presets-plugin/actions)
 [![Known Vulnerabilities](https://snyk.io/test/github/albertus82/eclipse-custom-maven-presets-plugin/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/albertus82/eclipse-custom-maven-presets-plugin?targetFile=pom.xml)
 
 ***Add Maven presets in Eclipse "Run As" menu.***
