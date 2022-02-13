@@ -114,7 +114,7 @@
 						<configuration>
 							<rules>
 								<requireJavaVersion>
-									<version>${maven.compiler.target}</version>
+									<version>${maven.compiler.source}</version>
 								</requireJavaVersion>
 								<requireMavenVersion>
 									<version>3.2.5</version>
