@@ -8,7 +8,7 @@ Eclipse Custom Maven Presets Plugin
 
 ## Usage
 
-1. Clone this repository;
+1. Clone this repository (you can also fork it if you want to commit your customizations later);
 2. Edit [`plugin.properties`](plugin.properties) and configure the presets you need (up to 9), e.g.:
    ```properties
    1.enabled=1
