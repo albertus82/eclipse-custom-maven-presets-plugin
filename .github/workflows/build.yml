@@ -6,8 +6,9 @@ jobs:
   build:
     name: Build
     strategy:
+      fail-fast: false
       matrix:
-        java: [ '8', '11', '17', '19', '21-ea' ]
+        java: [ '8', '11', '17', '20', '21-ea' ]
         os: [ windows-latest, ubuntu-latest, macOS-latest ]
     runs-on: ${{ matrix.os }}
     env:
@@ -18,4 +19,5 @@ jobs:
       with:
         distribution: zulu
         java-version: ${{ matrix.java }}
+        cache: 'maven'
     - run: ./mvnw clean verify -B -V -e -ntp
